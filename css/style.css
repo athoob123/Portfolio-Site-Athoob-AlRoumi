@@ -1,5 +1,5 @@
 img {
-    width: 100%;
+    width: 50%;
   }
 
   body {
@@ -34,30 +34,87 @@ img {
   }
 
 a {
-    font-size: 36px;
+    font-size: 16px;
 }
 
 a:hover {
-    color: red;
+    color: rgb(25, 18, 18);
     text-decoration: underline;
 }
 
 a:visited {
-    color: purple;
+    color: rgb(165, 58, 88);
 }
 
 a:active {
-    color: green;
+    color: rgb(183, 255, 183);
 }
 
 
-button{
-    background-color: blueviolet;
+.button{
+    background-color: rgb(238, 147, 219);
     color: @white;
     font-size: 16px;
     padding: 10px 20px;
     }
-button:active {
+.button:active {
     background-color: aqua;
 }
 
+header {
+  background-color: #c3fff0;
+  padding: 0px 20px 20px 20px;
+  margin: 10px;
+  border-bottom: 3px solid #531c00;
+  text-align: center;
+}
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+
+h1 {
+  text-align: center; /* Centers text */
+}
+
+.logo {
+  max-width: 250px;
+}
+
+nav > ul > li {
+  list-style-type: none;
+  padding: 0 15px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+#hero {
+  background-color: #ffe4c4;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.box{
+	/*start ------------*/
+	width: [object Object]px; 
+	height: [object Object]px; 
+	background: #F8F8F8; 
+	border: solid #BDBDBD 1px; 
+	box-shadow: 0 26px 40px rgba(0, 0, 0, 0.4)  ; 
+	-webkit-box-shadow: 0 26px 40px rgba(0, 0, 0, 0.4)  ; 
+	-moz-box-shadow: 0 26px 40px rgba(0, 0, 0, 0.4)  ;
+  align: top
+}
+
+main {
+  padding-bottom: 133px;
+}
