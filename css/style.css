@@ -1,6 +1,6 @@
 img {
-    width: 100%;
-  }
+  width: 100%;
+}
 
   body {
     background-color: #FFF8DC;
@@ -84,12 +84,6 @@ header {
   padding: 0 15px 0 15px;
 }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 #work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
 
 h1 {
@@ -137,8 +131,6 @@ Medium devices (640px and larger)
   header {
     text-align: unset;
     padding: 20px 0 13px;
-    .col-md-6 {
-      width: 50%;
   }
 
   nav {
@@ -199,3 +191,18 @@ X-large devices (1440px or larger)
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
+.col-md-6 {
+  width: 50%;
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.insta svg { height: 40px;}
