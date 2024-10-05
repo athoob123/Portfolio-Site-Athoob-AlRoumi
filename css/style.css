@@ -76,6 +76,12 @@ header {
   margin: 10px;
   border-bottom: 3px solid #531c00;
   text-align: unset;
+  box-shadow: 0 26px 40px rgba(0, 0, 0, 0.4)  ; 
+}
+
+.logo {
+  height: 80px;
+  width: auto;
 }
 
 /* Layout styling */
@@ -90,9 +96,7 @@ h1 {
   text-align: center; /* Centers text */
 }
 
-.logo {
-  max-width: 250px;
-}
+ 
 
 nav > ul > li {
   list-style-type: none;
@@ -102,6 +106,7 @@ nav > ul > li {
   font-weight: 700;
   color: #4a4a4a;
 }
+
 #hero {
   background-color: #ffe4c4;
   padding: 20px 0;
@@ -109,41 +114,110 @@ nav > ul > li {
   width: 100%;
 }
 
-.box{
-	/*start ------------*/
-	width: [object Object]px; 
-	height: [object Object]px; 
-	background: #F8F8F8; 
-	border: solid #BDBDBD 1px; 
-	box-shadow: 0 26px 40px rgba(0, 0, 0, 0.4)  ; 
-	-webkit-box-shadow: 0 26px 40px rgba(0, 0, 0, 0.4)  ; 
-	-moz-box-shadow: 0 26px 40px rgba(0, 0, 0, 0.4)  ;
+main {
+  padding-top: 56px;
 }
-
 main {
   padding-bottom: 133px;
 }
+
+
+.footer-style {
+  text-align:center;
+}
+
+.social-icons {
+margin-top: 40px;
+ 
+}
+
+.social-icons a{
+  text-decoration: none;
+  margin: 0 20px;
+}
+.insta svg { height: 40px;}
+
 
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
   header {
     text-align: unset;
     padding: 20px 0 13px;
   }
+
+.logo {
+  height: 200px;
+  width: auto;
+}
 
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
+
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  [class*="col-"] {
+    float: left;
+  }
+
+  .row {
+    width: 100%;
+       margin-bottom: 40px;
+}
+
+  .col-md-6 {
+    width: 48%;
+    margin-right: 2%;
+  }
+  
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.more-margin-pictures {
+  margin-bottom: 50px;
+  display: inline-block;
+}
+
+nav > ul {
+  margin: 1em 0;
+}
+
+
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+
+  .row {
+    width: 100%;
+       margin-bottom: 80px;
+}
+
 }
 /* ==============================
 X-large devices (1440px or larger)
@@ -151,15 +225,6 @@ X-large devices (1440px or larger)
 @media only screen and (min-width: 1440px) {
 }
 
-[class*="col-"] {
-  float: left;
-}
-
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 @keyframes color-change {
   0% {fill: #edc655;}
@@ -191,18 +256,36 @@ X-large devices (1440px or larger)
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
-.col-md-6 {
-  width: 50%;
+
+.navtoggle li:not(:last-child) {
+  display: none;
 }
 
-[class*="col-"] {
-  float: left;
+.navtoggle, .navtoggle.responsive {
+  position: relative;
 }
 
-.row:after {
-  content: "";
-  clear: both;
-  display: table;
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
 }
 
-.insta svg { height: 40px;}
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
