@@ -144,22 +144,30 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
 
   .navtoggle li:not(:last-child) {
+    display: none;
+  }
+
+  .navtoggle li:not(:last-child) {
     display: inline-block;
   }
 
+  .navtoggle li:last-child {
+    display: none;
+  }
+  
   nav > ul > li {
     display: inline-block;
   }
 
   header {
     text-align: unset;
-    padding: 20px 0 13px;
+    padding: 30px;
   }
 
-.logo {
+  .logo {
   height: 200px;
   width: auto;
-}
+  }
 
   nav {
     width: auto;
@@ -182,7 +190,7 @@ Medium devices (640px and larger)
   .row {
     width: 100%;
        margin-bottom: 40px;
-}
+  }
 
   .col-md-6 {
     width: 48%;
@@ -196,15 +204,40 @@ Medium devices (640px and larger)
     display: table;
   }
 
-.more-margin-pictures {
+  .more-margin-pictures {
   margin-bottom: 50px;
   display: inline-block;
-}
+  }
 
-nav > ul {
+  nav > ul {
   margin: 1em 0;
-}
+  }
 
+  .navtoggle, .navtoggle.responsive {
+  position: relative;
+  }
+
+  .navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+  }
+
+  .navtoggle.responsive li  {
+  display: block;
+  }
+
+  .navtoggle.responsive nav {
+  padding: 24px 0 0;
+  }
+
+
+
+  .navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+  }
 
 }
 
@@ -219,6 +252,8 @@ Large devices (1024px or larger)
 }
 
 }
+
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
@@ -257,35 +292,22 @@ X-large devices (1440px or larger)
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-.navtoggle li:not(:last-child) {
-  display: none;
-}
-
-.navtoggle, .navtoggle.responsive {
-  position: relative;
-}
-
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 20px;
-  padding-right: 0;
-}
-
-.navtoggle.responsive li  {
-  display: block;
-}
-
-.navtoggle.responsive nav {
-  padding: 24px 0 0;
-}
 .navtoggle.responsive li  {
   display: block;
   padding: 10px 0;
   border-top: 1px solid rgba(255,127,80,0.5);
-}
+  }
 
-.navtoggle.responsive li:last-child  {
-  padding: 0 0 10px;
-}
+
+  .navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
+  .navtoggle.responsive li  {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255,127,80,0.5);
+  }
+  
+  .navtoggle.responsive li:last-child  {
+    padding: 0 0 10px;
+  }
