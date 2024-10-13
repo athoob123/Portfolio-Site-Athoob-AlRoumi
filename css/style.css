@@ -2,56 +2,60 @@ img {
   width: 100%;
 }
 
-  body {
-    background-color: #FFF8DC;
-    font-family: 'Lato', sans-serif;
-    font-size: 20px; /* Sets the font size to 16px */
-    font-weight: 300; /* Sets the font weight to 300 */
-    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-    color: #4a4a4a;
-  }
-  
-  h1, h2, h3, h4 {
-    line-height: 1.4;
-  }
-  h1 {
-    font-size: 2.75em;
-    font-weight: 700;
-  }
-  
-  h2 {
-    font-size: 2.25em;
-    font-weight: 700;
-  }
-  
-  h3 {
-    font-size: 1.75em;
-    font-weight: 400;
-  }
-  h4 {
-    font-size: 1.35em;
-    font-weight: 400;
-  }
+body {
+  background-color: #fff8dc;
+  font-family: "Lato", sans-serif;
+  font-size: 20px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #4a4a4a;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
 
 a {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 a:hover {
-    color: rgb(25, 18, 18);
-    text-decoration: underline;
+  color: rgb(25, 18, 18);
+  text-decoration: underline;
 }
 
 a:visited {
-    color: rgb(165, 58, 88);
+  color: rgb(165, 58, 88);
 }
 
 a:active {
-    color: rgb(183, 255, 183);
+  color: rgb(183, 255, 183);
 }
 
-
-.button{
+.button {
   display: inline-block;
   background-color: #ff7f50;
   color: white;
@@ -63,20 +67,22 @@ a:active {
   transition-duration: 0.2s;
   transition-property: opacity;
 }
+
 .button:hover {
   opacity: 0.8;
 }
+
 .button:active {
-    background-color: aqua;
+  background-color: aqua;
 }
 
 header {
   background-color: #c3fff0;
-  padding: 0px 20px 20px 20px;
+  padding: 20px;
   margin: 10px;
   border-bottom: 3px solid #531c00;
   text-align: unset;
-  box-shadow: 0 26px 40px rgba(0, 0, 0, 0.4)  ; 
+  box-shadow: 0 26px 40px rgba(0, 0, 0, 0.4);
 }
 
 .logo {
@@ -87,16 +93,52 @@ header {
 /* Layout styling */
 
 .container {
-  padding: 0 15px 0 15px;
+  padding: 0 15px;
 }
 
-#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
 
 h1 {
   text-align: center; /* Centers text */
 }
 
- 
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
 
 nav > ul > li {
   list-style-type: none;
@@ -121,32 +163,26 @@ main {
   padding-bottom: 133px;
 }
 
-
 .footer-style {
-  text-align:center;
+  text-align: center;
 }
 
 .social-icons {
-margin-top: 40px;
- 
+  margin-top: 40px;
 }
 
-.social-icons a{
+.social-icons a {
   text-decoration: none;
   margin: 0 20px;
 }
-.insta svg { height: 40px;}
-
+.insta svg {
+  height: 40px;
+}
 
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-
-  .navtoggle li:not(:last-child) {
-    display: none;
-  }
-
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
@@ -154,7 +190,7 @@ Medium devices (640px and larger)
   .navtoggle li:last-child {
     display: none;
   }
-  
+
   nav > ul > li {
     display: inline-block;
   }
@@ -165,8 +201,8 @@ Medium devices (640px and larger)
   }
 
   .logo {
-  height: 200px;
-  width: auto;
+    height: 200px;
+    width: auto;
   }
 
   nav {
@@ -175,13 +211,11 @@ Medium devices (640px and larger)
     margin-top: 4px;
   }
 
-
   .container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
-
 
   [class*="col-"] {
     float: left;
@@ -189,14 +223,13 @@ Medium devices (640px and larger)
 
   .row {
     width: 100%;
-       margin-bottom: 40px;
+    margin-bottom: 40px;
   }
 
   .col-md-6 {
     width: 48%;
     margin-right: 2%;
   }
-  
 
   .row::after {
     content: "";
@@ -205,54 +238,49 @@ Medium devices (640px and larger)
   }
 
   .more-margin-pictures {
-  margin-bottom: 50px;
-  display: inline-block;
+    margin-bottom: 50px;
+    display: inline-block;
   }
 
   nav > ul {
-  margin: 1em 0;
+    margin: 1em 0;
   }
 
-  .navtoggle, .navtoggle.responsive {
-  position: relative;
+  .navtoggle,
+  .navtoggle.responsive {
+    position: relative;
   }
 
   .navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 20px;
-  padding-right: 0;
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 0;
   }
 
-  .navtoggle.responsive li  {
-  display: block;
+  .navtoggle.responsive li {
+    display: block;
   }
 
   .navtoggle.responsive nav {
-  padding: 24px 0 0;
+    padding: 24px 0 0;
   }
 
-
-
-  .navtoggle.responsive li:last-child  {
-  padding: 0 0 10px;
+  .navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
   }
-
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-
   .row {
     width: 100%;
-       margin-bottom: 80px;
+    margin-bottom: 80px;
+  }
 }
-
-}
-
 
 /* ==============================
 X-large devices (1440px or larger)
@@ -260,12 +288,18 @@ X-large devices (1440px or larger)
 @media only screen and (min-width: 1440px) {
 }
 
-
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
 }
+
 .sun {
   animation-duration: 4s;
   animation-name: color-change;
@@ -273,10 +307,17 @@ X-large devices (1440px or larger)
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
+
 .cloud-front {
   animation-duration: 30s;
   animation-name: cloud-move;
@@ -284,30 +325,17 @@ X-large devices (1440px or larger)
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
+
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
-
-.navtoggle.responsive li  {
-  display: block;
-  padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
-  }
-
-
-  .navtoggle.responsive nav {
-    padding: 24px 0 0;
-  }
-  .navtoggle.responsive li  {
-    display: block;
-    padding: 10px 0;
-    border-top: 1px solid rgba(255,127,80,0.5);
-  }
-  
-  .navtoggle.responsive li:last-child  {
-    padding: 0 0 10px;
-  }
